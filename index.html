@@ -1,19 +1,38 @@
----
-layout: default
-title: Beranda
----
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rama :D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>novascatia.my.id</h1>
+            <p>Last Updated: 03/09/2025</p>
+        </div>
+    </header>
 
-<div class="intro">
-  <h1>Selamat Datang di Novascatia.my.id</h1>
-  <p>{{ site.description }}</p>
-</div>
+    <main>
+        <div class="container">
+            <section class="posts">
+                <h2>Nov4 Posted:</h2>
 
-<h2>Artikel Terbaru</h2>
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-    </li>
-  {% endfor %}
-</ul>
+                <article class="post-summary">
+                    <h3><a href="articles/01.html">First Post.</a></h3>
+                    <p class="post-meta">Posted at 03/09/2025</p>
+                    <p>First post, be good please :D</p>
+                </article>
+
+                </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 novascatia.my.id</p>
+        </div>
+    </footer>
+</body>
+</html>
