@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rama :D</title>
+    <title>UG Student Site - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>novascatia.my.id</h1>
-            <p>Last Updated: 03/09/2025</p>
-        </div>
+        <div class="logo">UG Student Site</div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BERITA</a></li>
+                <li><a href="#">AKTIVASI</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">KONTAK</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <section class="posts">
-                <h2>Nov4 Posted:</h2>
-
-                <article class="post-summary">
-                    <h3><a href="articles/01.html">First Post.</a></h3>
-                    <p class="post-meta">Posted at 03/09/2025</p>
-                    <p>First post, be good please :D</p>
-                </article>
-
-                <article class="post-summary">
-                    <h3><a href="articles/01.html">First Post.</a></h3>
-                    <p class="post-meta">Posted at 03/09/2025</p>
-                    <p>First post, be good please :D</p>
-                </article>
-
-                <article class="post-summary">
-                    <h3><a href="articles/01.html">First Post.</a></h3>
-                    <p class="post-meta">Posted at 03/09/2025</p>
-                    <p>First post, be good please :D</p>
-                </article>
-
-                <article class="post-summary">
-                    <h3><a href="articles/01.html">First Post.</a></h3>
-                    <p class="post-meta">Posted at 03/09/2025</p>
-                    <p>First post, be good please :D</p>
-                </article>
-
-                <article class="post-summary">
-                    <h3><a href="articles/01.html">First Post.</a></h3>
-                    <p class="post-meta">Posted at 03/09/2025</p>
-                    <p>First post, be good please :D</p>
-                </article>
-
-                </section>
+    <main class="login-container">
+        <div class="login-form">
+            <h2>LOGIN</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group captcha-group">
+                    <label for="captcha">Captcha:</label>
+                    <div class="captcha-box">
+                        <span id="captcha-text"></span>
+                    </div>
+                    <span>=</span>
+                    <input type="text" id="captcha" name="captcha" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+        <div class="login-info">
+            <p>Silahkan login pada form yang telah disediakan pada form di samping ini. Apabila anda mengalami kesulitan silahkan hubungi Help Desk.</p>
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 novascatia.my.id</p>
+        <div class="footer-bottom">
+            <span>UG-SS</span>
+            <nav>
+                <ul>
+                    <li><a href="#">LINK</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
